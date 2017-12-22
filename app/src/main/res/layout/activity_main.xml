@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorBackground"
+        android:padding="40dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="280dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="0dp"
+            android:drawablePadding="2dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="0dp"
+            android:src="@drawable/akakom"
+            android:textColorHint="#000" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/nama"
+            android:drawableLeft="@drawable/icons_user"
+            android:hint="Nama"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:paddingLeft="0dp"
+            android:drawablePadding="5dp"
+            android:textColorHint="#000"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789."
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/nim"
+            android:drawableLeft="@drawable/number"
+            android:hint="NIM"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:paddingLeft="0dp"
+            android:drawablePadding="5dp"
+            android:textColorHint="#000"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/alamat"
+            android:drawableLeft="@drawable/address"
+            android:hint="Alamat"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:paddingLeft="0dp"
+            android:drawablePadding="5dp"
+            android:textColorHint="#000"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789."
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/no_telp"
+            android:drawableLeft="@drawable/phone"
+            android:hint="Telpon"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:paddingLeft="0dp"
+            android:drawablePadding="1dp"
+            android:textColorHint="#000"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/email"
+            android:drawableLeft="@drawable/mail"
+            android:hint="Email"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:paddingLeft="0dp"
+            android:drawablePadding="5dp"
+            android:textColorHint="#000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Photo"
+            android:id="@+id/photo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"/>
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Kirim"
+            android:textColor="#ffffff"
+            android:id="@+id/btnSend"
+            android:background="@drawable/selector_xml_btn_yellow"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Call Number"
+            android:textColor="#ffffff"
+            android:id="@+id/btnCallNumber"
+            android:background="@drawable/selector_xml_btn_yellow"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+</ScrollView>

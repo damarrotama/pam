@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:id="@+id/geser_kekiri"
+        android:background="@color/bootstrap_brand_success"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <!-- 80dp
+            android:textColor="@color/colorAccent" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DETAIL"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|center_horizontal" />
+
+    </LinearLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/tvGambar"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:padding="5dp" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/bottom_wrapper1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvNamaWisata"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Medium Text"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:padding="2dp"-->
+            <!--android:textColor="#33CC33" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/textView1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="TextView"-->
+            <!--android:layout_marginLeft="10dp"/>-->
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/tvGambarf"-->
+                    <!--android:layout_width="60dp"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_marginRight="20dp" />-->
+
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvNamaWisatas"-->
+                    <!--android:layout_width="121dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="tvJudul"-->
+                    <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/tvGambar"
+                    android:layout_width="63dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Nama Wisata"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_weight="1"
+                    android:id="@+id/tvNamaWisata" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvRead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Belum Dibaca"
+                    android:textColor="@android:color/black" />
+
+                <com.like.LikeButton
+                    app:icon_type="heart"
+                    app:icon_size="15dp"
+                    android:id="@+id/star_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.like.LikeButton
+                    app:icon_type="Star"
+                    app:icon_size="15dp"
+                    android:id="@+id/stars_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+
+                <!--<com.like.LikeButton-->
+                    <!--app:icon_type="heart"-->
+                    <!--app:icon_size="15dp"-->
+                    <!--android:id="@+id/star_button"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"/>-->
+                <!--<com.like.LikeButton-->
+                    <!--app:icon_type="Star"-->
+                    <!--app:icon_size="15dp"-->
+                    <!--android:id="@+id/stars_button"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Like 1089"-->
+                    <!--android:gravity="left"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:id="@+id/textView8" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Periode"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:id="@+id/textView9" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="0000/0000"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:id="@+id/tvPeriode"-->
+                    <!--android:gravity="right" />-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.daimajia.swipe.SwipeLayout>

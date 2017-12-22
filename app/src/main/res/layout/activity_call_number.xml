@@ -1,0 +1,70 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorBackground"
+        android:padding="40dp">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="5dp"
+            android:paddingLeft="0dp"
+            android:src="@drawable/nela" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="148dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_xml_btn_yellow"
+            android:onClick="checkLogin"
+            android:text="CALL"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="5dp"
+            android:paddingLeft="0dp"
+            android:src="@drawable/ayu" />
+
+        <Button
+            android:id="@+id/call2"
+            android:layout_width="148dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_xml_btn_yellow"
+            android:text="CALL"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="5dp"
+            android:paddingLeft="0dp"
+            android:src="@drawable/via" />
+
+        <Button
+            android:id="@+id/call3"
+            android:layout_width="148dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_xml_btn_yellow"
+            android:text="CALL"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+</ScrollView>
