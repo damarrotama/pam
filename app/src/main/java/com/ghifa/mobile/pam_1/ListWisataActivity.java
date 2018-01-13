@@ -1,6 +1,7 @@
 package com.ghifa.mobile.pam_1;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.database.Cursor;
@@ -358,6 +359,9 @@ public class ListWisataActivity extends AppCompatActivity implements SwipeRefres
                         public void onClick(View v) {
 
                             Toast.makeText(getApplicationContext(), "anda geser kiri", Toast.LENGTH_LONG).show();
+                            Intent preview = new Intent(ListWisataActivity.this, LokasiActivity.class);
+                            preview.putExtra("judul_pengumuman", wisata.getJudul());
+                            startActivity(preview);
 
                         }
                     });

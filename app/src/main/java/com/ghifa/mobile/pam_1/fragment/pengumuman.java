@@ -452,6 +452,7 @@ public class pengumuman extends Fragment implements SwipeRefreshLayout.OnRefresh
 
                         Intent preview = new Intent(getActivity(), ListWisataActivity.class);
                         preview.putExtra("id_pengumuman", pengumuman.getId_pengumuman());
+                        preview.putExtra("judul_pengumuman", pengumuman.getJudulPengumuman());
                         startActivity(preview);
                     }
                 });
