@@ -44,7 +44,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainBotomActivity"
-            android:label="@string/title_activity_main_botom" />
+            android:label="Antarmuka Mobile" />
         <activity
             android:name=".PengumumanActivity"
             android:label="Detail"
