@@ -7,13 +7,17 @@ import android.webkit.WebView;
 public class LokasiActivity extends AppCompatActivity {
 
     private String url;
+    String judul;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lokasi);
 
-        url = "https://www.google.co.id/maps/place/Parangtritis+Beach/@-8.0255145,110.3199843,15z/data=!3m1!4b1!4m5!3m4!1s0x2e7b00975eac533d:0x351bfe1453e22e36!8m2!3d-8.0251022!4d110.3295648?hl=en";  //Pendefinisian URL
+        judul   = getIntent().getStringExtra("judul_pengumuman");
+
+//        url = "https://www.google.co.id/maps/place/Parangtritis+Beach/@-8.0255145,110.3199843,15z/data=!3m1!4b1!4m5!3m4!1s0x2e7b00975eac533d:0x351bfe1453e22e36!8m2!3d-8.0251022!4d110.3295648?hl=en";  //Pendefinisian URL
+        url = "https://www.google.co.id/maps/place/"+judul;  //Pendefinisian URL
 
         WebView view = (WebView) this.findViewById(R.id.webView);  //sinkronisasi object berdasarkan id
         view.getSettings().setJavaScriptEnabled(true);  //untuk mengaktifkan javascript

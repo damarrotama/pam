@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ghifa.mobile.pam_1.intent2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:src="@drawable/proyek"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="0dp"
+                    android:drawablePadding="5dp"
+                    android:textColorHint="#000"/>
+
+            </TableRow>
+
+
+
+            <TableRow>
+
+
+                <Button
+                    android:id="@+id/buttonBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Back To Form" />
+
+                <Button
+                    android:id="@+id/buttonExit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Exit" />
+
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

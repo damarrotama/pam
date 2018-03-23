@@ -23,9 +23,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".WelcomeActivity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".intent1"
+            android:label="@string/title_activity_main2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -55,7 +54,13 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyABb1XGwIZ3twqkSfxFHYVP-VKkSQ12sfI" />
 
-        <activity android:name=".LokasiActivity"></activity>
+        <activity android:name=".LokasiActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".intent2"
+            android:label="@string/title_activity_main2"/>
+        <activity android:name=".intent3"
+            android:label="@string/title_activity_main2"
+            ></activity>
     </application>
 
 </manifest>

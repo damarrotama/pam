@@ -20,6 +20,9 @@ import java.util.ArrayList;
 
 public class home extends Fragment {
 
+    public static home newInstance() {
+        return new home();
+    }
 
     private final String android_version_names[] = {
             "Wisata Alam",
@@ -35,9 +38,7 @@ public class home extends Fragment {
             "https://api.learn2crack.com/android/images/froyo.png",
     };
 
-    public static home newInstance() {
-        return new home();
-    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);

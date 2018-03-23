@@ -358,7 +358,7 @@ public class ListWisataActivity extends AppCompatActivity implements SwipeRefres
                         @Override
                         public void onClick(View v) {
 
-                            Toast.makeText(getApplicationContext(), "anda geser kiri", Toast.LENGTH_LONG).show();
+//                            Toast.makeText(getApplicationContext(), "anda geser kiri", Toast.LENGTH_LONG).show();
                             Intent preview = new Intent(ListWisataActivity.this, LokasiActivity.class);
                             preview.putExtra("judul_pengumuman", wisata.getJudul());
                             startActivity(preview);
@@ -370,7 +370,10 @@ public class ListWisataActivity extends AppCompatActivity implements SwipeRefres
 
                         public void onClick(View v) {
 
-                            Toast.makeText(getApplicationContext(), "anda onclick", Toast.LENGTH_LONG).show();
+                            //Toast.makeText(getApplicationContext(), wisata.getJudul(), Toast.LENGTH_LONG).show();
+                            Intent preview = new Intent(ListWisataActivity.this, LokasiActivity.class);
+                            preview.putExtra("judul_pengumuman", wisata.getJudul());
+                            startActivity(preview);
                         }
                     });
 
