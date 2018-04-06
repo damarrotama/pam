@@ -31,11 +31,7 @@
 
             </TableRow>
 
-
-
             <TableRow>
-
-
                 <Button
                     android:id="@+id/buttonBack"
                     android:layout_width="match_parent"

@@ -23,7 +23,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".intent1"
+            android:name=".P3aActivity"
             android:label="@string/title_activity_main2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -56,11 +56,20 @@
 
         <activity android:name=".LokasiActivity" />
         <activity android:name=".WelcomeActivity" />
-        <activity android:name=".intent2"
+        <activity
+            android:name=".intent2"
+            android:label="@string/title_activity_main2" />
+        <activity
+            android:name=".intent3"
+            android:label="@string/title_activity_main2" />
+        <activity android:name=".intent1" />
+        <activity
+            android:name=".p3bActivity"
             android:label="@string/title_activity_main2"/>
-        <activity android:name=".intent3"
+        <activity
+            android:name=".p3cActivity"
             android:label="@string/title_activity_main2"
-            ></activity>
+            />
     </application>
 
 </manifest>
